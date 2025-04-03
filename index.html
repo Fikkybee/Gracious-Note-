@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracious Note📖</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+        <h2>Gracious Note📖</h2>
+        <form action="index1.html">
+        <button class="logout">LogOut</button>
+    </form>
+    </div>
+        <p class="workspace">Personal Workspace</p>
+        
+        <div class="top-bar">
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search notes...">
+                <i class="fas fa-search"></i>
+            </div>
+            <select id="filterStatus">
+                <option value="All">All Notes</option>
+                <option value="Active">Active</option>
+                <option value="Draft">Draft</option>
+                <option value="Archived">Archived</option>
+            </select>
+            <button id="newNoteBtn">+ New Note</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Last Modified</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="notesList">  </tbody>
+         </table>
+     </div>
+
+    <!-- Note Modal -->
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Add Note</h3>
+            <input type="text" id="noteTitle" placeholder="Note Title">
+            <select id="noteCategory">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+            </select>
+            <select id="noteStatus">
+                <option value="Active">Active</option>
+                <option value="Draft">Draft</option>
+                <option value="Archived">Archived</option>
+            </select>
+            <textarea id="noteContent" placeholder="Write your note here..."></textarea>
+            <button id="saveNote">Save</button>
+        </div>
+    </div>
+</body>
+</html>

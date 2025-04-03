@@ -1,0 +1,152 @@
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: w #f8fcf8;
+    /* margin: 20px; */
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-size: 72.5%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 2px 5px rgbe(0, 0, 0, 0.1);
+}
+.head {
+    display: flex;
+    align-content: space-between;
+    column-gap: 50rem;
+    align-items: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.workspace {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 50rem; /* Increased width */
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    background-color: whitesmoke;
+    font-size: 16px;
+}
+
+.search-bar i {
+    position: fixed;
+    right: 20rem;
+    color: gray;
+}
+
+/* Buttons & Select */
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: none;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Status-Based Background Colors */
+td.active { background-color: #d4edda; color: #155724; }
+td.draft { background-color: #fff3cd; color: #856404; }
+td.archived { background-color: #e2e3e5; color: #6c757d; }
+
+/* Actions */
+.actions i {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.fa-edit { color: black; }
+.fa-trash { color: red; }
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    width: 60%; /* Bigger width */
+    height: auto; /* Adjusts based on content */
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 250px; /* Bigger height */
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
